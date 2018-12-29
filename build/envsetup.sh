@@ -1,6 +1,6 @@
 function repopick() {
     T=$(gettop)
-    $T/vendor/aosp/build/tools/repopick.py $@
+    $T/vendor/future/build/tools/repopick.py $@
 }
 
 function fixup_common_out_dir() {
