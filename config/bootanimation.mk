@@ -17,19 +17,19 @@
 TARGET_BOOT_ANIMATION_RES ?= undefined
 
 ifeq ($(TARGET_BOOT_ANIMATION_RES),480)
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/AEX-480.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/AEX-480.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),540)
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/AEX-540.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/AEX-540.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/AEX-720.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/AEX-720.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/AEX-1080.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/AEX-1080.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),2140)
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/AEX-1080-2140-18-9.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/AEX-1080-2140-18-9.zip:system/media/bootanimation.zip
 else ifeq ($(TARGET_BOOT_ANIMATION_RES),undefined)
      $(warning Target bootanimation res is undefined, using generic bootanimation )
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 else
      $(warning Defined bootanimation res is wrong, using generic bootanimation )
-     PRODUCT_COPY_FILES += vendor/aosp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+     PRODUCT_COPY_FILES += vendor/future/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 endif
